@@ -10,33 +10,33 @@ Example output: `results.json`
 		"Ecto: Topre": 6
     },
     "winners": [
-	{
-	    "deduction": [
-			"Ecto: Topre"
-	    ]
-	},
-	{
-	    "RoastPotatoes": [
-			"Ecto: Topre",
-			"Callisto: MX"
-	    ]
-	},
-	{
-	    "Hispes": [
-			"Ecto: Topre",
-			"Pulsate: Topre"
-	    ]
-	},
-	{
-	    "Deductivemonkee": [
-			"Pulsate: Topre"
-	    ]
-	},
-	{
-	    "nathanrosspowell": [
-			"Ecto: Topre"
-	    ]
-	}
+		{
+		    "deduction": [
+				"Ecto: Topre"
+	     	]
+    	},
+    	{
+    	    "RoastPotatoes": [
+    			"Ecto: Topre",
+    			"Callisto: MX"
+    	    ]
+    	},
+    	{
+	        "Hispes": [
+    			"Ecto: Topre",
+    			"Pulsate: Topre"
+    	    ]
+    	},
+    	{
+    	    "Deductivemonkee": [
+    			"Pulsate: Topre"
+    	    ]
+    	},
+    	{
+	        "nathanrosspowell": [
+	    		"Ecto: Topre"
+	        ]
+    	}
     ]
 }
 ```
