@@ -4,39 +4,39 @@ Example usage: `raffle.py entries.json stock.json`
 
 Example output: `results.json`
 
-
-	{
-	    "remaining stock": {
+```javascript
+{
+    "remaining stock": {
 		"Ecto: Topre": 6
-	    },
-	    "winners": [
-		{
-		    "deduction": [
+    },
+    "winners": [
+	{
+	    "deduction": [
 			"Ecto: Topre"
-		    ]
-		},
-		{
-		    "RoastPotatoes": [
+	    ]
+	},
+	{
+	    "RoastPotatoes": [
 			"Ecto: Topre",
 			"Callisto: MX"
-		    ]
-		},
-		{
-		    "Hispes": [
+	    ]
+	},
+	{
+	    "Hispes": [
 			"Ecto: Topre",
 			"Pulsate: Topre"
-		    ]
-		},
-		{
-		    "Deductivemonkee": [
+	    ]
+	},
+	{
+	    "Deductivemonkee": [
 			"Pulsate: Topre"
-		    ]
-		},
-		{
-		    "nathanrosspowell": [
+	    ]
+	},
+	{
+	    "nathanrosspowell": [
 			"Ecto: Topre"
-		    ]
-		}
 	    ]
 	}
-
+    ]
+}
+```
