@@ -1,9 +1,10 @@
 # raffle.py
 
 Inputs:
-1) path to entries JSON 
-2) path to stock JSON
-3) Optional: integer value for an item limit
+
+1. path to entries JSON 
+2. path to stock JSON
+3. optional: integer value for an item limit
 
 Example usage: `raffle.py entries.json stock.json 2`
 
