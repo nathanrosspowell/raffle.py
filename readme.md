@@ -1,42 +1,46 @@
 # raffle.py
 
-Example usage: `raffle.py entries.json stock.json`
+Inputs:
+1) path to entries JSON 
+2) path to stock JSON
+3) Optional: integer value for an item limit
+
+Example usage: `raffle.py entries.json stock.json 2`
 
 Example output: `results.json`
-
 ```javascript
 {
     "remaining stock": {
-		"Ecto: Topre": 6
+        "Ecto: Topre": 6
     },
     "winners": [
-		{
-		    "deduction": [
-				"Ecto: Topre"
-	     	]
-    	},
-    	{
-    	    "RoastPotatoes": [
-    			"Ecto: Topre",
-    			"Callisto: MX"
-    	    ]
-    	},
-    	{
-	        "Hispes": [
-    			"Ecto: Topre",
-    			"Pulsate: Topre"
-    	    ]
-    	},
-    	{
-    	    "Deductivemonkee": [
-    			"Pulsate: Topre"
-    	    ]
-    	},
-    	{
-	        "nathanrosspowell": [
-	    		"Ecto: Topre"
-	        ]
-    	}
+        {
+            "RoastPotatoes": [
+                "Ecto: Topre",
+                "Callisto: MX"
+            ]
+        },
+        {
+            "Deductivemonkee": [
+                "Pulsate: Topre"
+            ]
+        },
+        {
+            "nathanrosspowell": [
+                "Ecto: Topre",
+                "Pulsate: Topre"
+            ]
+        },
+        {
+            "deduction": [
+                "Ecto: Topre"
+            ]
+        },
+        {
+            "Hispes": [
+                "Ecto: Topre"
+            ]
+        }
     ]
 }
 ```

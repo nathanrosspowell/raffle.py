@@ -14,7 +14,7 @@ def pretty_print(data):
     return json.dumps(data, sort_keys=True, indent=4, separators=(',', ': '))
 
 
-def pick_winners(entries, stock):
+def pick_winners(entries, stock, limit):
     random_names = deque(entries.keys())
     random.SystemRandom().shuffle(random_names)
     winners = []
@@ -30,17 +30,20 @@ def pick_winners(entries, stock):
                     del stock[choice]
                 else:
                     stock[choice] -= 1
+            if limit and len(items) == limit:
+                break
         if len(items) > 0:
             winners.append({name: items})
-    with open("results.json", 'w') as f:
-        f.write(pretty_print({"winners": winners, "remaining stock": stock}))
     return winners, stock
 
 
 if __name__ == "__main__":
     entries = file_to_json(sys.argv[1])
     stock = file_to_json(sys.argv[2])
-    winners, stock = pick_winners(entries, stock)
-    print("Wrote to 'results.json'")
-    print("Winners:", winners)
-    print("Remaining stock:", stock)
+    try:
+        limit = int(sys.argv[3])
+    except:
+        limit = None
+    winners, stock = pick_winners(entries, stock, limit)
+    with open("results.json", 'w') as f:
+        f.write(pretty_print({"winners": winners, "remaining stock": stock}))
